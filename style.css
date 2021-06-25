@@ -1,0 +1,38 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.mainContainer{
+    height: 100vh;
+    width: 100%;
+    margin: 0 0;
+    padding: 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.formItem{
+
+    margin-bottom: 20px;
+}
+.formContainer{
+    
+    height: 400px;
+    width: 500px;
+    padding: 10px;
+}
+.addmatch{
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
