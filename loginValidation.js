@@ -4,7 +4,9 @@ function Validate(){
 
     if(username=="admin" && password=="1234")
     {
-            alert("logged in");
+            
+        alert("logged in");
+
             return false;
         }
         else{

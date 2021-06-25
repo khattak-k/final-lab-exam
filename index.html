@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>PSL mini</title>
+		<title>Title</title>
 		<!-- Required meta tags -->
 		<meta charset="utf-8" />
 		<meta
@@ -17,37 +17,77 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="./style.css" />
-		<script src="./loginValidation.js"></script>
 	</head>
 	<body>
 		<div class="mainContainer">
-			<div class="formContainer">
-				<form>
-					<input
-						class="formItem"
-						type="text"
-						id="username"
-						name="login"
-						placeholder="Username"
-					/>
-					<input
-						class="formItem"
-						type="text"
-						id="password"
-						name="login"
-						placeholder="password"
-					/>
-					<input
-						class="formItem"
-						type="submit"
-						value="Log In"
-						onclick="validate()"
-					/>
-				</form>
+			<div class="title text-center bg-dark text-info">
+				<h1>PSL 2.0</h1>
 			</div>
+
+			<div class="addmatch">
+				<div class="form-group formItem">
+					<label for="team1">Select list:</label>
+					<select class="form-control" id="team1">
+						<option>Karachi Kings</option>
+						<option>Multan Sultans</option>
+						<option>Peshawar Zalmi,</option>
+						<option>Lahore Qalanders</option>
+						<option>Islamabad United</option>
+						<option>Quetta Gladiators</option>
+					</select>
+				</div>
+				<div class="form-group formItem">
+					<label for="team2">Select list:</label>
+					<select class="form-control" id="team2">
+						<option>Multan Sultans</option>
+						<option>Peshawar Zalmi,</option>
+						<option>Lahore Qalanders</option>
+						<option>Karachi Kings</option>
+						<option>Islamabad United</option>
+						<option>Quetta Gladiators</option>
+					</select>
+				</div>
+				<input
+					class="formItem"
+					type="text"
+					id="city"
+					name="city"
+					placeholder="city"
+				/>
+				<input
+					class="formItem"
+					type="text"
+					id="date"
+					name="date"
+					placeholder="date"
+				/>
+				<input
+					name="add"
+					id="addbutton"
+					class="btn w-100 btn-primary"
+					type="button"
+					value="Add Match Record"
+					onclick="Add()"
+				/>
+			</div>
+		</div>
+		<div class="Section">
+			<!-- <table>
+				<tr class="matchesInfo">
+					<th>
+						<h3>Matches:</h3>
+					</th>
+				</tr>
+				<tbody id="match">
+                    
+                </tbody>
+			</table> -->
+
+			<ul id="mathchesInfo"></ul>
 		</div>
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="./app.js"></script>
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
